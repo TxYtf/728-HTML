@@ -4,10 +4,121 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Накладні букви</title>
+		<style>
+			html {
+				font-family: sans-serif;
+			}
+			table {
+				border-collapse: collapse;
+				border: 2px solid rgb(200,200,200);
+				letter-spacing: 1px;
+				font-size: 0.8rem;
+			}
+			td, th {
+				border: 1px solid rgb(190,190,190);
+				padding: 10px 20px;
+			}
+			th {
+				background-color: rgb(235,235,235);
+			}
+			td {
+				text-align: center;
+			}
+			tr:nth-child(even) td {
+				background-color: rgb(250,250,250);
+			}
+			tr:nth-child(odd) td {
+				background-color: rgb(245,245,245);
+			}
+    	</style>
 </head>
 <body>
-    <h1>Hello World!</h1>
-    <img width="400" src="img/5.ico" alt="Baby Yoda">
+    <h1>Шрифти на замовлення</h1>
+    <label>Виберіть шрифт:<br>
+        <input id="Anastasia" type="radio" name="font" value="Anastasia" checked>
+        <label for="Anastasia">Anastasia &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input id="ClassicoCYR" type="radio" name="font" value="ClassicoCYR">
+        <label for="ClassicoCYR">Classico Cyrillic</label><br>
+        <input id="AntiquaBOLD" type="radio" name="font" value="AntiquaBOLD">
+        <label for="AntiquaBOLD">Antiqua Bold &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	</label>
+        <input id="LobsterRegular" type="radio" name="font" value="LobsterRegular">
+        <label for="LobsterRegular">Lobster regular</label><br>
+        <input id="DanteScript" type="radio" name="font" value="DanteScript">
+        <label for="DanteScript">Dante-script&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input id="SenseCYR" type="radio" name="font" value="SenseCYR">
+        <label for="SenseCYR">Sense Cyrillic</label><br>
+        <input id="IzhitsaUKR" type="radio" name="font" value="IzhitsaUKR">
+        <label for="IzhitsaUKR">Izhitsa Ukrainian &nbsp;</label>
+        <input id="JikharevUKR" type="radio" name="font" value="JikharevUKR">
+        <label for="JikharevUKR">Jikharev Ukrainian</label><br>
+    </label><hr>
+    <label>Виберіть покриття букв:
+        <br>
+        <input id="laquer" type="radio" name="finish" value="laquer" checked>
+        <label for="laquer">Лакування &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input id="nickel" type="radio" name="finish" value="nickel">
+        <label for="nickel">Нікелювання &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><br>
+        <input id="paint" type="radio" name="finish" value="paint">
+        <label for="paint">Фарбування &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>	
+        <input id="gold" type="radio" name="finish" value="gold">
+        <label for="gold">Позолота</label><br>
+        <input id="special" type="radio" name="finish" value="special">
+        <label for="special">Спецпокриття &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    </label><br><hr>
+    <label>Виберіть спосіб виконання <br>
+        - букви:<br>
+        <input id="separateLT" type="radio" name="connectLT" value="separateLT">
+        <label for="separateLT">Букви окремо &nbsp;&nbsp;&nbsp;</label>
+        <input id="connectLT" type="radio" name="connectLT" value="connectLT" checked>
+        <label for="connectLT">Букви з'єднані &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input id="barLT" type="radio" name="connectLT" value="barLT">
+        <label for="barLT">Букви на планці &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    </label><br>
+    <label>
+        - дати:<br>	
+        <input id="separateDG" type="radio" name="connectDG" value="separateDG">
+        <label for="separateDG">Цифри окремо &nbsp;</label>
+        <input id="barDG" type="radio" name="connectDG" value="barDG" checked>
+        <label for="barDG">Цифри на планках</label>
+    </label><br><br>
+
+  <table>
+      <tr>
+        <th>Purchase</th>
+        <th>Location</th>
+        <th>Date</th>
+        <th>Evaluation</th>
+        <th>Cost (€)</th>
+      </tr>
+      <tr>
+        <td>Haircut</td>
+        <td>Hairdresser</td>
+        <td>12/09</td>
+        <td>Great idea</td>
+        <td>30</td>
+      </tr>
+      <tr>
+        <td>Lasagna</td>
+        <td>Restaurant</td>
+        <td>12/09</td>
+        <td>Regrets</td>
+        <td>18</td>
+      </tr>
+      <tr>
+        <td>Shoes</td>
+        <td>Shoeshop</td>
+        <td>13/09</td>
+        <td>Big regrets</td>
+        <td>65</td>
+      </tr>
+      <tr>
+        <td>Toothpaste</td>
+        <td>Supermarket</td>
+        <td>13/09</td>
+        <td>Good</td>
+        <td>5</td>
+      </tr>
+</table>
 </body>
 </html>
